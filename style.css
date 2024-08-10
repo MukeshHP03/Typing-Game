@@ -22,6 +22,15 @@ body{
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
+.wrapper .input-field{
+    /* background-color: red; */
+    /* height: 60px;
+    width: 100%; */
+    padding: 15px 20px 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -99;
+}
 .wrapper .content-box{
     border: 1px solid #bfbfbf;
     /* display: flex; */
@@ -68,4 +77,24 @@ body{
 }
 .content button:active{
     transform: scale(0.97);
+}
+.typing-text p span{
+    position: relative;
+}
+.typing-text p span.active{
+    color: orange;
+}
+.typing-text p span.correct{
+    color:green;
+}
+.typing-text p span.incorrect{
+    color:red;
+    outline: 1px solid #fff;
+    background-color: #ffc0cb;
+    border-radius: 4px;
+}
+
+::selection{
+    color: #fff;
+    background-color: orange;
 }
